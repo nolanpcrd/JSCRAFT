@@ -1,0 +1,251 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: center;
+    font-family: AppleGothic, sans-serif;
+}
+
+#map {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#zone-eau {
+    background-color: #2f87ec;
+    width: 20vw;
+    height: 100vh;
+    right: 0;
+    z-index: 3;
+}
+
+#zone-herbe {
+    display: flex;
+    background-color: #1e5d0b;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+#zone-sable {
+    background-color: #f7e6b7;
+    width: 20vw;
+    height: 100vh;
+    right: 20vw;
+    z-index: 2;
+}
+
+#zone-foret {
+    position: absolute;
+    display: flex;
+    background-color: #0a3d00;
+    width: 100vw;
+    height: 25vh;
+    z-index: 1;
+    bottom: 0;
+}
+
+.arbre {
+    position: absolute;
+    background-color: #69502a;
+    width: 1%;
+    height: 15%;
+}
+
+#personnage {
+    position: absolute;
+    background-image: url("steve.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 8vh;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+}
+
+.inventaire {
+    position: absolute;
+    backdrop-filter: blur(10px);
+    display: flex;
+    width: 25vw;
+    height: 5vw;
+    bottom: 2%;
+    z-index: 5;
+}
+
+.slot {
+    border: #757369 5px solid;
+    margin-left: -3px;
+    width: 5vw;
+    height: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: absolute;
+    top: 3%;
+}
+
+#popup-craft {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 70vh;
+    top: 15%;
+    left: 25%;
+    background-color: #f7e6b7;
+    z-index: 6;
+    border: #757369 5px solid;
+}
+
+#craft {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 15vw;
+    height: 15vw;
+    backdrop-filter: blur(10px);
+}
+
+#craft .slot {
+    width: 100%;
+    height: 100%;
+}
+
+#craft .slot img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+
+#resultat-craft {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    bottom: 2%;
+    right: 2%;
+    z-index: 7;
+    backdrop-filter: blur(10px);
+}
+
+#close-craft {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 2%;
+    right: 2%;
+    z-index: 7;
+    color: red;
+    font-weight: bold;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    z-index: 999;
+}
+
+#coordonnees {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 999;
+}
+
+#DrawColor {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 6vw;
+    bottom: 2%;
+    right: 2%;
+    z-index: 999;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("palette.png");
+    background-size: 100%;
+}
+
+#DrawColorChoice {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 77vh;
+    top: 12%;
+    left: 2%;
+    z-index: 999;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(116,117,91,0.4);
+}
+
+#DrawColorChoice div {
+    width: 6vh;
+    height: 6vh;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+#rouge {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#jaune {
+    background-color: yellow;
+}
+
+#vert {
+    background-color: green;
+}
+
+#bleu {
+    background-color: blue;
+}
+
+#rose {
+    background-color: pink;
+}
+
+#violet {
+    background-color: purple;
+}
+
+#blanc {
+    background-color: white;
+}
+
+#noir {
+    background-color: black;
+}
+
+#gris {
+    background-color: grey;
+}

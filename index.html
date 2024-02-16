@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSCRAFT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="jeu()">
+<div id="coordonnees"></div>
+<div id="personnage"></div>
+<div id="DrawColor" onclick="colors()"></div>
+<div id="DrawColorChoice">
+    <div id="rouge" onclick="setColor('red')"></div>
+    <div id="orange" onclick="setColor('orange')"></div>
+    <div id="jaune" onclick="setColor('yellow')"></div>
+    <div id="vert" onclick="setColor('green')"></div>
+    <div id="bleu" onclick="setColor('blue')"></div>
+    <div id="violet" onclick="setColor('purple')"></div>
+    <div id="rose" onclick="setColor('pink')"></div>
+    <div id="blanc" onclick="setColor('white')"></div>
+    <div id="gris"  onclick="setColor('gray')"></div>
+    <div id="noir"  onclick="setColor('black')"></div>
+</div>
+<div id="map">
+    <div id="zone-herbe"></div>
+    <div id="zone-foret"></div>
+    <div id="zone-sable"></div>
+    <div id="zone-eau"></div>
+</div>
+<div class="inventaire">
+    <div class="slot slot1" onclick="select(1)"></div>
+    <div class="slot slot2" onclick="select(2)"></div>
+    <div class="slot slot3" onclick="select(3)"></div>
+    <div class="slot slot4" onclick="select(4)"></div>
+    <div class="slot slot5" onclick="select(5)"></div>
+</div>
+
+<div id="popup-craft">
+    <h1>Craft</h1>
+    <div id="close-craft" onclick="closeCraft()">X</div>
+    <div id="craft">
+        <div class="slot craftSlot1" onclick="setInCraftTable(1)"></div>
+        <div class="slot craftSlot2" onclick="setInCraftTable(2)"></div>
+        <div class="slot craftSlot3" onclick="setInCraftTable(3)"></div>
+        <div class="slot craftSlot4" onclick="setInCraftTable(4)"></div>
+        <div class="slot craftSlot5" onclick="setInCraftTable(5)"></div>
+        <div class="slot craftSlot6" onclick="setInCraftTable(6)"></div>
+        <div class="slot craftSlot7" onclick="setInCraftTable(7)"></div>
+        <div class="slot craftSlot8" onclick="setInCraftTable(8)"></div>
+        <div class="slot craftSlot9" onclick="setInCraftTable(9)"></div>
+    </div>
+    <div id="resultat-craft" class="slot" onclick="getResult()"></div>
+    <div class="inventaire">
+        <div class="slot slot1" onclick="select(1)"></div>
+        <div class="slot slot2" onclick="select(2)"></div>
+        <div class="slot slot3" onclick="select(3)"></div>
+        <div class="slot slot4" onclick="select(4)"></div>
+        <div class="slot slot5" onclick="select(5)"></div>
+    </div>
+</div>
+</body>
+</html>
